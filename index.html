@@ -35,14 +35,26 @@ body, html {
 
 
 
-table, th, td {
-  border: 5px solid black;
-  box-shadow: 2px 2px 4px #000000;
+.btn-group .button {
+  background-color: #123;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
-table.center {
-  margin-left: auto; 
-  margin-right: auto;
+.btn-group .button:hover {
+  opacity: 0.7;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50),0 17px 50px 0 rgba(0,0,0,0.40);
 }
+
 
 /* social links */
 .fa {
@@ -119,7 +131,7 @@ li a:hover {
 }
 
 body {
-  font-family: Cursive;
+  font-family: Tahoma;
 }
 
 article {
@@ -153,6 +165,27 @@ footer {
   }
 }
 
+		
+.rotate {
+  animation: rotation 10s;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 
 	</style>
 
@@ -171,6 +204,7 @@ footer {
 
 
 <div class="hero-image">
+	<img src = "img/gear2.png" alt = "animation" class="rotate linear infinite" style="float: left; max-width:8%;height:auto; padding-right: 10px;padding-left: 10px; border-radius:10%">
   <div class="hero-text">
     <h1 style="font-size:70px">Nikesh Shrestha</h1>
     <h2 style= "font-family: Crusive;">Mechanical Engineering | Robotics | Machine Learning | Automotive</h2>
@@ -202,11 +236,28 @@ following years as I enrolled in my high school’s introductory engineering cou
 
   </article>
 
-<table class = "center" style = "border: 5px outset white">
-<tr>
-<th><a href="img/resume.pdf" style="color:black"> Download my Resume</a></th>
-</tr>
-</table>
+
+<br>
+
+<article style = "background-color: transparent;">
+<h2 style = "color: black; text-align: center"> Links to learn more about me</h2>
+
+<div class="btn-group">
+  <button class="button" style="display: block; margin: 0 auto"><a href="img/resume.pdf" style="color:white; text-decoration:none">Download Resume</a></button>
+</div>
+
+<br>
+
+<div class="btn-group">
+  <button class="button" style="float:right; margin: auto 18% auto 2%"><a href="hobbies.html" style="color:white; text-decoration:none">Hobbies</a></button>
+  <button class="button" style="float:right; margin: auto 18% auto 2%"><a href="projects.html" style="color:white; text-decoration:none">Projects</a></button>
+  <button class="button" style="float:right; margin: auto 18% auto 2%"><a href="aboutme.html" style="color:white; text-decoration:none">About Me</a></button>
+</div>
+<br>
+<br>
+
+
+</article>
 </section>
 
 <p> </p>
