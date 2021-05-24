@@ -9,6 +9,26 @@
 
 	<style>
 
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
 * {
   box-sizing: border-box;
 }
@@ -344,6 +364,48 @@ footer {
 }
 
 
+/* Card flip with text */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
 	</style>
 
 <body>
@@ -357,7 +419,7 @@ footer {
 </table>
 </h1>
 </em></strong></h1>
-	<h2 align= "center"; style= "font-family: Crusive; font-size: 35px"><em> Engineering Projects Completed </em></h1>		
+	<h2 align= "center"; style= "font-family: Crusive; font-size: 35px"><em> Engineering Projects/ Experiences</em></h1>		
 </header>
 
 <ul>
@@ -372,105 +434,232 @@ footer {
 
 </ul>
 
+<section>
 
 <!-- MAIN (Center website) -->
 <div class="main">
 
-<h1>PROJECTS</h1>
-<hr>
 
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> CAD/3D</button>
-  <button class="btn" onclick="filterSelection('cars')"> Class Projects</button>
-  <button class="btn" onclick="filterSelection('people')"> Current</button>
-</div>
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column nature">
-    <div class="content">
-      <img src="img/Picture1.jpg" alt="Lego Car" style="width:100%">
-      <h4>Lego Car</h4>
-      <p>Lego Car Modeled in Solidworks.</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="img/Picture2.jpg" alt="3d Lego" style="width:100%">
-      <h4>3d Print</h4>
-      <p>3D Print of the Lego Car.</p>
-    </div>
-  </div>
-  <div class="column nature">
-    <div class="content">
-    <img src="img/pic4.png" alt="Skeleton of the Toy Helicopter" style="width:100%">
-      <h4>Helicopter Skeleton</h4>
-      <p>CAD model showing the internal part of the helicopter.</p>
-    </div>
-  </div>
-<p>.</p>
-  <div class="column nature">
-    <div class="content">
-      <img src="img/pic5.png" alt="helicopter" style="width:100%">
-      <h4>Helicopter Exterior</h4>
-      <p>CAD model showing the exterior of the helicopter.</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="img/OSV.JPG" alt="Car" style="width:100%">
-      <h4>Over Sand Vehicle</h4>
-      <p>Project to design and build an OSV which is able to pick up material and identify its magnetic characteristic.</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-    <img src="img/Truss.JPG" alt="truss project" style="width:100%">
-      <h4>Building a Truss Competition.</h4>
-      <p>In class competition to build the most efficient truss (lowest weight to load ratio). </p>
-    </div>
-  </div>
-  <br>
-  <div class="column people">
-    <div class="content">
-      <img src="img/current.jpg" alt="Current Project" style="width:100%">
-      <h4>Current Project</h4>
-      <p>Project Relating to sensors and automation. Still gathering ideas phase. </p>
-    </div>
-  </div>
-
-<!-- END GRID -->
-</div>
-
-<!-- END MAIN -->
-</div>
-
-
-<section>
-
-  <article>
-<h3 style="font-size: 20px"> <strong> CAD/ 3D Prints Tinkering </stong></h3>
-<p style = "text-indent: 40px"><em> While first learning to use AutoCAD, I wanted to challenge myself outside of the classroom. So, I designed and 3D-printed a Lego car, and created a CAD-model of a toy Helicopter. </em></p>
-<br>
-<h3 style="font-size: 20px"> <strong> Class Projects </stong></h3>
-<p style = "text-indent: 40px"><em> Being a part of an engineering curriculum, I have been involed in many class proejcts where I apply the knowledge learned in that course. 
-By being involved in these projects, I have learned and developed my skill to become an engineer. Projects are the main part of my education which has helped me
-grow into a better engineer.  </em></p>
-<br>
-<h3 style="font-size: 20px"> <strong> Current Project </stong></h3>
-<p style = "text-indent: 40px"><em> Currently I am working in a project with sensors and actuators. I am in the phase of deciding between which project to make:</em></p>
-<p style = "text-indent: 40px"><em> Sensor that helps go through a maze, or </em></p>
-<p style = "text-indent: 40px"><em> Sensor that detects sunlight and plays an alarm. </em></p>
-<br>
-
-
+<article> 
+<h1>Research Experience</h1>
+<h3>REU at NJIT 2021</h3>
 </article>
+
+<div class="flip-card"; style = "float: left; width: 100%; padding: 5px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Optics and Photonics</h2> 
+      <p> Worked with Dr. Eon Soo Lee to research on bio-nanochips.</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<article> 
+<h1>Engineering Projects</h1>
+<h3>Sensor Robots (Cars):</h3>
+</article>
+
+<div class="flip-card"; style = "float: left; width: 50%; padding: 5px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Robot that Follows You</h2> 
+      <p>Designed and build a car that follows you around.</p> 
+      <p>Used Arduino to programs various sensors to detect an object or a person and follow them. </p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card"; style = "float: left; width: 50%; padding: 5px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Over-Sand Vehicle</h2> 
+      <p>Designed and build an OSV that can life up objects and determine the objects material property (weight, magnetic property)</p> 
+      <p>Used Arduino and various sensors to search for the object in an open field, apporach it, lift it and identiyf its physical properites. </p>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<article> 
+<h3>CAD / 3D Prints Tinkering:</h3>
+</article>
+
+<div class="flip-card"; style = "float: left; width: 33.33%; padding: 5px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Lego Car</h2> 
+      <p>Designed and 3D-printed a lego car in Solidworks.</p> 
+      <p>Self-project to learn and improve skills on Solidworks and better understand tolerance and fits. </p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card"; style = "float: left; width: 33.33%; padding: 5px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Desiging a Toy Helicopter</h2> 
+      <p>Used AutoCAD to replicate a toy helicopter (interior). Created parts with complex geometry and shapes.</p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card"; style = "float: left; width: 33.33%; padding: 5px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Desiging a Toy Helicopter</h2> 
+      <p>Used AutoCAD to replicate a toy helicopter (exterior). Used complex tools to replicate the exterior of a toy helicopter.</p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<article> 
+<h1>In-Class Projects/ Competitions</h1>
+<h3>Course assigned projects</h3>
+</article>
+
+<div class="flip-card"; style = "float: left; width: 33.33%; padding: 5px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Building a Truss</h2> 
+      <p>In class competition to design and build the most efficient truss. The team with the lowest weight to strength ratio would win. Earned third place in the competition. </p>
+    </div>
+  </div>
+</div>
+
+<div class="flip-card"; style = "float: left; width: 33.33%; padding: 5px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Mousetrap Vehicle Competition</h2> 
+      <p>Design and build the furthest traveling mousetrap vehicle. Earned sixth place in the in-class competition.</p> 
+    </div>
+  </div>
+</div>
+
+<div class="flip-card"; style = "float: left; width: 33.33%; padding: 5px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h2>Toothpick Bridge</h2> 
+      <p>In-class individual competition to build the most efficient toothpick bridge with weight and size constraints. The lowest weight to strength ratio would win. Earned second place. </p> 
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+
+</div>
+
 </section>
+
+
+
+
+
+
+
+
+
+
 
 <footer>
   <p>Created by Nikesh Shrestha</p>
 </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script>
 filterSelection("all")
