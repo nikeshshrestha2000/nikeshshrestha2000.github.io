@@ -9,6 +9,17 @@
 
 	<style>
 
+.main {
+  max-width: 90%;
+  margin: auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.09);
+  -webkit-transform: scale(1.09);
+  transform: scale(1.09); 
+}
+
 table, th, td {
   border: 5px solid black;
   box-shadow: 2px 2px 4px #000000;
@@ -16,6 +27,26 @@ table, th, td {
 table.center {
   margin-left: auto; 
   margin-right: auto;
+}
+
+.btn-group .button {
+  background-color: white;
+  border-radius: 8px;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.btn-group .button:hover {
+  opacity: 0.7;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.50),0 17px 50px 0 rgba(0,0,0,0.40);
 }
 
 /* social links */
@@ -37,10 +68,6 @@ table.center {
   color: white;
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
 
 .fa-linkedin {
   background: #007bb5;
@@ -93,7 +120,7 @@ li a:hover {
 }
 
 body {
-  font-family: Tahoma;
+  font-family: Cursive;
 }
 
 
@@ -143,64 +170,86 @@ footer {
   <li><a href="aboutme.html">About Me</a></li>
   <li><a href="projects.html">Projects</a></li>
   <li><a href="hobbies.html"> Hobbies </a></li>
-  <li style="float:right"><a href="#" class="fa fa-twitter"></a></li>
   <li style="float:right"><a href="https://www.facebook.com/dabanggnik" class="fa fa-facebook"></a></li>
   <li style="float:right"><a href="https://www.instagram.com/nike.stha08/?hl=en" class="fa fa-instagram"></a></li>
   <li style="float:right"><a href="https://www.linkedin.com/in/nikesh-shrestha-3518ba11b/" class="fa fa-linkedin"></a></li>
+
 </ul>
 
 
 
 <section>
 
-  <article>
-<h3 style="font-size: 30px"> <strong> About Me </stong></h3>
-<p>  </p> 
-<p style = "text-indent: 40px"><em> Hello World! My name is Nikesh Shrestha. I am a Nepali born guy passionate about robotics and automation.
- I strive to be the best I can. My involvement in various projects have taught me many different skills (both technical skills and soft skills) necessary for an Engineer. </em></p>
+<div class="main">
 
-    <img src = "img/aboutmeimg.JPG" alt = "about" style="float:right; padding: 0px 100px; width="354" height="562";>
+<br>
+
+<article style="font-family: Tahoma"> 
+<br>
+<h1 align = "center"; style = "font-size: 30px"><strong>A Summary about Myself</strong></h1>
+<br>
+<p style = "text-indent: 10px; padding: 3%; padding-top: 0px; padding-bottom: 0px"><em> Hello World! My name is Nikesh Shrestha. I am a Nepali born guy passionate about Robotics/ Automation, Machine Learning and Automotive.
+I am currently a Mechanical Engineering undergraduate student in the Univeristy of Maryland - College Park. After acheiving my bachelor's degree, I plan to pursue further education in Mechanical Engineering. 
+I strive to be the best I can. My involvement in various projects and experiences have taught me many different skills (both technical skills and soft skills) necessary for an Engineer. Aside form engineering, I really enjoy cooking, drawing
+and soccer. </em></p>
+<p style = "text-indent: 10px; padding: 3%; padding-top: 0px; padding-bottom: 0px"><em> Thank you for visiting my Personal Website. Please continue to explore to learn more about me. </em></p>
+<p style = "text-align: right; font-size: 10px; padding-right: 10px">Scroll down for downloadable Resume <p>
+<br>
+<div class="zoom">
+<img src = "img/nik2.jpg" alt = "about" style= "max-width:45%; height:auto; padding-right: 10px;padding-left: 10px; border-radius:10%";>
+</div>
+<hr style="height:2px; border-width:0; color:white; background-color:white; width: 80%">
+<br>
+<h1 align = "center"; style = "font-size: 30px"><strong>Academics</strong></h1>
+<p style = "text-indent: 10px; padding: 3%; padding-top: 0px; padding-bottom: 0px"><strong> Univeristy of Maryland - College Park </strong>  </p> 
+<p style = "text-indent: 50px"><em>Bachelor of Science in Mechanical Engineering </em></p>
+<p style = "text-indent: 50px"><em> Expected Graduation: December 2021 </em></p>
+<p style = "text-indent: 50px"><em> GPA: 3.7/4.0 </em></p>
+<br>
+<p style = "text-indent: 10px; padding: 3%; padding-top: 0px; padding-bottom: 0px"><strong> Calvert Hall College High School </strong>  </p> 
+<p style = "text-indent: 50px"><em>High School Diploma </em></p>
+<p style = "text-indent: 50px"><em> Graduated on June 2018 </em></p>
+<p style = "text-indent: 50px"><em> GPA: 4.0/4.0 </em></p>
+<br>
+<p style = "text-indent: 10px; padding: 3%; padding-top: 0px; padding-bottom: 0px"><strong> Academic Awards </strong>  </p>
+<p style = "text-indent: 50px"><em> Dean’s List for Outstanding Students </em></p>
+<p style = "text-indent: 50px"><em> Lushbaugh Endowed Scholarship Award Recipient </em></p>
+<p style = "text-indent: 50px"><em> Sean and Sarah Scholarship Award Recipient </em></p>
+<p style = "text-indent: 50px"><em> Adele H. Stamp Memorial Award </em></p>
+<p style = "text-indent: 50px"><em> Office of Multi-ethnic Student Education Academic Excellence Award</em></p>
+<hr style="height:2px; border-width:0; color:white; background-color:white; width: 95%">
+<br>
+<h1 align = "center"; style = "font-size: 30px"><strong>Experiences</strong></h1>
+<p style = "text-indent: 10px; padding: 3%; padding-top: 0px; padding-bottom: 0px"><strong> Research Experience </strong>  </p>
+<p style = "text-indent: 20px; padding: 3%; padding-top: 0px; padding-bottom: 0px">Research Lab: NJIT Advanced Energy Systems and Microdevices Laboratory</p>
+<p style = "text-indent: 20px; padding: 3%; padding-top: 0px; padding-bottom: 0px">Research Advisor: Dr. Eon Soo Lee <a href = "https://www.lee-research.org/"> (Research site) </a></p>
+<p style = "text-indent: 20px; padding: 3%; padding-top: 0px; padding-bottom: 0px">Research Mentor: Yudong Wang </p>
+<p style = "text-indent: 20px; padding: 3%; padding-top: 0px; padding-bottom: 0px">Research Topic: Visualization and Characterization of Fluid Drop on a surface-treated PDMS material. </p>
+<p style = "text-indent: 20px; padding: 3%; padding-top: 0px; padding-bottom: 0px"><em> During this summer research experience at NJIT with Dr. Lee in his microdevices laboratory, I studied the characterization of fluid drop on a PDMS material treated with Oxygen
+Plasma on the surface for implementation in Passive Plasma Separation in a Microchannel. I developed a MATLAB code which semi-automatically determines the wetting angles made by the fluid on the treated PDMS. The wetting angles determine the wettability of the surface 
+depending on variable treatment levels. The ability to control the wettability of the material can be implemented for passively separating plasma from whole blood for disease detection and monitoring. </em></p>
+<br>
+<p style = "text-indent: 10px; padding: 3%; padding-top: 0px; padding-bottom: 0px"><strong> Teaching Experience </strong>  </p>
+<p style = "text-indent: 20px; padding: 3%; padding-top: 0px; padding-bottom: 0px">Undergraduate Teaching Assistantships </p>
+<p style = "text-indent: 40px; padding: 3%; padding-top: 0px; padding-bottom: 0px"> Courses: </p>
+<p style = "text-indent: 50px; padding: 3%; padding-top: 0px; padding-bottom: 0px"> Electronics and Instrumentation II (Fall 2021)</p>
+<p style = "text-indent: 50px; padding: 3%; padding-top: 0px; padding-bottom: 0px"> Vibrations, Controls and Optimization I (Spring 2021)</p>
+<p style = "text-indent: 50px; padding: 3%; padding-top: 0px; padding-bottom: 0px"> Introduction to C++ and MATLAB Programming (Fall 2020)</p>
+<p style = "text-indent: 40px; padding: 3%; padding-top: 0px; padding-bottom: 0px"> Tasks:</p>
+<p style = "text-indent: 50px; padding: 3%; padding-top: 0px; padding-bottom: 0px"> Grade Lab reports/ Homework assignments</p>
+<p style = "text-indent: 50px; padding: 3%; padding-top: 0px; padding-bottom: 0px"> Lead Labs/ Studio sessions with 20-30 students.</p>
+<p style = "text-indent: 50px; padding: 3%; padding-top: 0px; padding-bottom: 0px"> Provide extra guidance to students needing additional help with homeworks/ understanding course concepts </p>
+<br>
+<div class="btn-group">
+  <button class="button" style="display: block; margin: 0 auto"><a href="img/resume.pdf" style="color:#123; text-decoration:none"><strong>Download Resume</strong></a></button>
+</div>
+<br>
 
 
-<h3 style="font-size: 30px"> <strong> Academics </stong></h3>
-<p><strong> Univeristy of Maryland - College Park </strong>  </p> 
-<p style = "text-indent: 40px"><em>Bachelor of Science in Mechanical Engineering </em></p>
-<p style = "text-indent: 40px"><em> Expected Graduation: December 2021 </em></p>
-<p style = "text-indent: 40px"><em> GPA: 3.6/4.0 </em></p>
+</article>
+</div>
 
 
-<p><strong> Calvert Hall College High School </strong>  </p> 
-<p style = "text-indent: 40px"><em>High School Diploma </em></p>
-<p style = "text-indent: 40px"><em> Graduated on June 2018 </em></p>
-<p style = "text-indent: 40px"><em> GPA: 4.0/4.0 </em></p>
-<p>  </p>
-
-<p><strong> Academic Awards </strong>  </p> 
-<p style = "text-indent: 40px"><em> Dean’s List for Outstanding Students </em></p>
-<p style = "text-indent: 40px"><em> Lushbaugh Endowed Scholarship Award Recipient </em></p>
-<p style = "text-indent: 40px"><em> Adele H. Stamp Memorial Award </em></p>
-<p style = "text-indent: 40px"><em> Office of Multi-ethnic Student Education Academic Excellence Award</em></p>
-<p style = "text-indent: 40px"><em> AP Scholar with Distinction </em></p>
-
-<h3 style="font-size: 30px"> <strong> Experience </stong></h3>
-<p><strong> Teaching Experience </strong>  </p> 
-<p style = "text-indent: 40px"><em> Undergraduate Teaching Assistant for Vibrations, Controls and Optimization I </em></p>
-<p style = "text-indent: 40px"><em> Undergraduate Teaching Assistant for C++ & MATLAB Programming Course </em></p>
-
-
-<p><strong> Work/Volunteer Experiences </strong>  </p> 
-<p style = "text-indent: 40px"><em> Recreational Activities Assistant at Johns Hopkins ElderPlus </em></p>
-<p style = "text-indent: 40px"><em> Cashier/ Cook/ Closing Assistant Manager at Wings Things N More </em></p>
-<p style = "text-indent: 40px"><em> Elementary School Tutor for CAFE (Cultural Academy of Excellence; Organization for Title I students) </em></p>
-<p style = "text-indent: 40px"><em> Sort Center Member at Amazon Warehouse </em></p>
-<p style = "text-indent: 40px"><em> Main Embroiderer and Cashier at Flynn O'Hara Uniforms</em></p>
-
-
-<table class = "center" style = "border: 5px outset white">
-<tr>
-<th><a href="img/resume.pdf" style="color:white"> Download my Resume </a></th>
-</tr>
-</table>
   </article>
 
 </section>
@@ -211,7 +260,6 @@ footer {
 <footer>
   <p>Created by Nikesh Shrestha</p>
 </footer>
-
 
 </body>
 </html>
